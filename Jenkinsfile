@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         APP_NAME       = "express-login-ui"
-        IMAGE_NAME     = "nileshsun/express-login-ui"
+        IMAGE_NAME     = "sumitshrivas/express-login-ui"
         CONTAINER_PORT = "3000"
         HOST_PORT      = "3000"
     }
@@ -18,7 +18,7 @@ pipeline {
         stage('Clone Source') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/nilesh-g/express-login-ui'
+                url: 'https://github.com/sumitshrivas29/express-login-ui'
             }
         }
 
